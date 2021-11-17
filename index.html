@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob's awesome portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/7e01b6f09b.js" crossorigin="anonymous"></script>
+</head>
+<body class="d-flex flex-column">
+    <!--Menu-->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="sidemenu">
+                <li><a class="selected" href="index.html">About Me</a></li>
+                <li><a href="index.html">My Work</a></li>
+            </ul>
+        </div>
+        </div>
+      </div>
+    <!--end of Menu-->
+    <!--Header-->
+    <nav class="navbar sticky-top navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" data-bs-toggle="offcanvas" href="#offcanvasMenu" >
+                <span class="navbar-toggler-icon"></span>
+          </a>
+          Jacob's Awesome Site
+        </div>
+      </nav>
+    <!--end of Header-->
+    <!--Main-->
+    <div class="container-fluid main-container">
+        <div class="row h-100">
+            <div class="col-md-8 col-sm-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12 pt-5">
+                            <p class="section">
+                                Jacob Thomas is a web developer based in Houston, TX. 
+                                You might find him coding in a coffee shop while he tries to debug 
+                                a section of code isn't working exactly the way he wants. 
+                                Jacob is best described as resourceful and persistant. 
+                                Be on the lookout for beautiful and useful web applications from him.
+                            </p>
+                            <h4>Education</h4>
+                            <p class="section">
+                              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8AAAB6enrm5uaOjo6/v7/19fVubm4jIyO0tLTIyMhGRkbq6upqamrS0tIcHByGhoYXFxdXV1fc3Nynp6cvLy8+Pj7Ly8uurq6WlpZKSkpycnIpKSnX19fx8fGcnJw5OTl/f38QEBBiYmJaWloMxbVnAAAE5klEQVR4nO3d6XqiMBiGYVBRVCrauuGCVef8j3GuQgKE8pEFk4q+z6+pjdHbThGogOchhBBCCCGEEEIIIYQQQq/ceDLo0jGtzXfsNl1kQeh3q/6UOk73BSGEbyu8p0P90jslnEcG00VLm8KJ0V0nlPBgNF0CoWHvJNwF6s1+7tAuXGhMF7gRHjQWeRu58ENjOt+N8FPjGc3lwgmEEEIIIYQQQgghhBCaCHXWvL/lwidc874sWSPSOuFDErlwz8cOyJdpxIcs3QjLEuo5nYVhilvAKfl6NTyqI+GIek4LYZiiMKJm+xDvCaFpmfAo3qYoPD5WeLEpjLe87Mm1CocnPjamhDc+YrOTCu/ffHBoU1gWS4Vf4k3t+7xnUuFcvM2+MIQQwucTVorVhUv5bHsN4dgmq9LfCW2qquFnCKEYhBDaCEIIxSCE0EYQQigGIYQ2ghBCMQghtBGEFeFIPttUQ2hTVU1D+LGbSdotNYSyyX5lX6ia9j5vxQz/W0MIYUNy4bfOdEVWhel+qtw+kgoD9dmygoN1oXaqf8dX7PjywgmELUGYC8/UN5sKpMKTxmzlJyL79G6h8374CSGEEELYEIQQikEIIYQ+hA3J17y3GrM5E4YserPgxEYo/Aw/YzY2pobd+OPFdzfCStQwo6MRFtSw2v71pxDOIXxeoXhkl6KQPLLLTGh3X9sgYY0WUuG0GPsI4YXPdtlaFZatpUL5EZY6wpt421MIj+rCs1wYPla4dCO8s8ed+s6FQ/Ld96FCtty6+CeXwuzBvLF0Xaq7MGbHE119VeHqvGDtzICZ0J/m/5YtJzoLt+xBf076piiMDV1l+fIqyb+QLG26Cv+xx8w2LZwJ2QKGHTI7tSkc5I+R5r9ezoTeOp+SrTjv7AnZ/xO+IeZO6AX5nGF+2tWhLeG+9hI6FBavar4gb1mkdhGyT8OUvwYuhV7KNmuD/Mu7BSE7TLRy4ganwuIUJ5f8K2r1xli4Ym+D1bNlOBbyx2aLu72psPnsLZux8DrmxY6F+ckN2H4fz5sZCht/hvxt8DJYll1HroV8kbqpn8m6XqtQN6fC4m/1kmPHeyz0IrYuH7SO6rOw2Be9bhtDPSejc9CSn/GwJeRLismoqWW2/UI9p1PSeKf2yPdPa8L2rYvWZeljsyds3bp4DSH9y/8yQi9avbrQGy/Ov1q/lLCpHYQQQgghhBBCCOFbCPuyfWgu7Mk2Pplc2I/9NHQQvo1w4K9Uy/bL9k8o/yxGGYQQ/qFwI23Vc6H8s0ujngvll4YtrusIIYQP7PWFCw1hn5Y0yS1mrTSE/D632vUlIv6d8KYu9EM+nZXTLtX+mqj7jl+7RkjtCAVFYRmEEJLCE1/XCvdS4bUYTAlvxZqbXLgtVvNuVoW1z9e0CouartWTCcWlj4tjZlrLhObHPTUJxdtcHPfUGoTVGo4/lAvJvYmJeFf7wuhaXJ+Nek4hv6Da9UsqTPhs5LX2DsXl2S5uhGZn4CGFOmczK686aFVodiw3KXR6LDeEEEIIIYQQQgghhK8jfPCa90ZjNkdr3uNAo+I8wqRwpjHbzo1QO8UtYNUgNC4TnuXjfpf2SRhEQ+2iMyW8p/qzDdO7VaF57fu8tYMQQgvC2rm7n1E4PQ66VDsWNe0228TVhWkQQgghhBBCCCGEEEIIob/pP/jJwZbuxSz5AAAAAElFTkSuQmCC" style="
+            max-width: 80px;
+            float: left;
+        ">   Graduated with Honors from the University of Houston's Computer Science program.                
+                            </p>
+                            <h4>Interests</h4>
+                            <p>
+                              <i class="fas fa-globe-africa"></i> Travel<br>
+                              <i class="fas fa-camera"></i> Photography<br>
+                              <i class="fas fa-pepper-hot"></i> Cooking<br>
+                              <i class="fas fa-play-circle"></i> Anime<br>
+                              <i class="fas fa-gamepad"></i> Video Games
+                            </p>
+
+                        </div>
+                        <div class="col-md-4 col-sm-12  pt-5">
+                            <div class="accordion accordion-flush" id="accordionSkills">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                      Front End
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionSkills">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Bootstrap</li>
+                                            <li>React</li>
+                                            <li>Foundation</li>
+                                            <li>CSS</li>
+                                            <li>SASS</li>
+                                            <li>jQuery</li>
+                                            <li>Handlebars</li>
+                                            <li>Javascript</li>   
+                                        </ul>    
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                      Back End
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionSkills">
+                                    <div class="accordion-body">
+                                        
+                                        <ul>
+                                            <li>NodeJS</li>
+                                            <li>Express</li>
+                                            <li>PHP</li>
+                                            <li>C</li>
+                                            <li>C++</li>
+                                            <li>NPM</li>
+                                            <li>MySQL</li>
+                                            <li>Heroku</li>
+                                            <li>Webpack</li>
+                                            <li>Java</li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                      Design
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionSkills">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Photoshop</li>
+                                            <li>Illustrator</li>
+                                            <li>Gimp</li>
+                                            <li>Figma</li>    
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        More
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionSkills">
+                                      <div class="accordion-body">
+                                        <ul>
+                                            <li>Git</li>
+                                            <li>Firebase</li>
+                                            <li>Linux CLI</li>
+                                            <li>VS Code</li>   
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                              </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 right-img">
+            </div>
+        </div> 
+    </div>
+
+    <!--end of Main-->
+    <!--Footer-->
+    <footer class="navbar navbar-light">
+        <div class="text-center">
+          Made with ♥ by Jacob
+        </div>
+      </footer>
+    <!--end of Footer-->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</html>

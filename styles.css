@@ -1,0 +1,85 @@
+:root{
+    --light-cream: #fbfdf8;
+    --dark-green: #191c1a;
+}
+
+body{
+    height: 100vh;
+}
+.section:not(:last-child) {
+    border-bottom: 1px solid;
+    padding-bottom: 32px;
+}
+.main-container{
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+.navbar a, .navbar{
+    color: var(--dark-green);
+    font-weight: bold;
+}
+.navbar, body{
+    background-color: var(--light-cream);
+}
+.navbar{
+    border-bottom: 1px solid var(--dark-green);
+}
+.sidemenu{
+    list-style: none;
+    padding: 0;
+}
+.sidemenu a {
+   color: var(--dark-green);
+   font-weight: bold;
+   text-decoration: none;
+   display: inline-block;
+   margin: 10px;
+   padding: 10px 15px;
+ }
+.sidemenu a.selected {
+    border-bottom: 2px solid var(--dark-green);
+}
+footer{
+    border-top: 1px solid var(--dark-green);
+    background-color: var(--light-cream);
+}
+footer .text-center{
+    margin: auto;
+}
+.right-img{
+    background: url("https://cdn.pixabay.com/photo/2014/11/27/10/29/mountain-547363_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+/* Card styling */
+h5.card-title {
+    font: bold 12px Sans-Serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: var(--dark-green);
+    color: #fff;
+    padding: 5px 10px;
+    margin: 0 0 10px 0;
+    line-height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none;
+  
+    /* Rotate from top left corner (not default) */
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+  }
+  .card{
+      border-left: 34px solid var(--dark-green);
+      padding-left: 10px;
+  }
+  button.accordion-button {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--dark-green);
+}
